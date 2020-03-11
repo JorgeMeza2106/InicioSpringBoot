@@ -1,10 +1,20 @@
 package com.unmsm.prueba.model;
 
 public class Post {
+	private int id;
 	private String titulo;
 	private String descripcion;
 	private String urlIMG;
 	
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getTitulo() {
 		return titulo;
 	}
@@ -29,7 +39,8 @@ public class Post {
 		this.urlIMG = urlIMG;
 	}
 	
-	public Post(String titulo, String descripcion, String urlIMG) {
+	public Post(int id, String titulo, String descripcion, String urlIMG) {
+		this.id = id;
 		this.titulo = titulo;
 		this.descripcion = descripcion;
 		this.urlIMG = urlIMG;
